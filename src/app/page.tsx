@@ -9,7 +9,7 @@ export default function Home() {
         <h2 className="text-3xl text-white font-medium tracking-widest">
           Hi, <span className="text-[#4e78f7]">I&#39;am</span>
         </h2>
-        <h1 className="py-4 leading-[50px] md:leading-none text-4xl font-semibold text-white tracking-wide">
+        <h1 className="py-4 leading-[50px] md:leading-none text-4xl md:text-6xl font-semibold text-white tracking-wide">
           Cheryl Rio Kurnia Putra
         </h1>
         <p className="pt-2 text-gray-300">
