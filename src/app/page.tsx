@@ -7,13 +7,13 @@ export default function Home() {
       {/* left content */}
       <div className="order-2 md:order-1">
         <h2 className="text-3xl text-white font-medium tracking-widest">
-          Hi, <span className="text-[#4e78f7]">I'am</span>
+          Hi, <span className="text-[#4e78f7]">I&#39;am</span>
         </h2>
         <h1 className="py-4 leading-[50px] md:leading-none text-4xl font-semibold text-white tracking-wide">
           Cheryl Rio Kurnia Putra
         </h1>
         <p className="pt-2 text-gray-300">
-          I'am a student who learn IT from Indonesia.
+          I&#39;am a student who learn IT from Indonesia.
         </p>
 
         {/* social media link */}

@@ -15,7 +15,7 @@ export default function Navbar() {
                 "about",
                 "skills",
             ] as const).map((label) =>(
-                <Link href={label === "home" ? '/' : `/${label}`}>
+                <Link key={label} href={label === "home" ? '/' : `/${label}`}>
                     <p className="uppercase text-white">{label}</p>
                 </Link>
             ))
