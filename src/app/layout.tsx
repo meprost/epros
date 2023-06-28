@@ -53,11 +53,11 @@ export default function RootLayout({
           crossOrigin=""
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         ></link>
       </head>
-      <body className="font-main bg-[#13004F] bg-no-repeat min-h-[100vh]">
+      <body className="font-main bg-[#4E31AA] bg-no-repeat min-h-[100vh]">
         <Navbar />
         {children}
       </body>
