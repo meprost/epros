@@ -7,7 +7,7 @@ export default function Home() {
       {/* left content */}
       <div className="order-2 md:order-1">
         <h2 className="text-3xl text-white font-medium tracking-widest">
-          Hi, <span className="text-[#d7ff37]">I&#39;am</span>
+          Hi, <span className="text-[#00abf0]">I&#39;am</span>
         </h2>
         <h1 className="py-4 leading-[50px] md:leading-none text-4xl md:text-6xl font-semibold text-white tracking-wide">
           Cheryl Rio Kurnia Putra
@@ -15,7 +15,12 @@ export default function Home() {
         <p className="pt-2 text-gray-300">
           I&#39;am a student who learn IT from Indonesia.
         </p>
-
+        <br />
+        <a href="/foto2.webp" download="coba">
+          <button className="bg-transparent text-[#00abf0] hover:text-[#081021] hover:bg-[#00abf0] duration-300 py-3 px-3.5 rounded-lg font-semibold border-[3px] border-[#00abf0]">
+            Download CV
+          </button>
+        </a>
         {/* social media link */}
         <div className="pt-8 flex items-center gap-x-6">
           {(
@@ -33,12 +38,7 @@ export default function Home() {
             return (
               <div key={label} className="text-white">
                 <Link href={link} target="_blank">
-                  <Image
-                    alt={label}
-                    src={logo}
-                    width={25}
-                    height={25}
-                  />
+                  <Image alt={label} src={logo} width={25} height={25} />
                 </Link>
               </div>
             );
@@ -47,11 +47,11 @@ export default function Home() {
       </div>
 
       {/* right content */}
-      <div className="order-1 md:order-2 border-white border-4 rounded-full p-2">
+      <div className="shadow-[0px_0_15px_6px_rgba(0,171,240,0.25)] order-1 md:order-2 border-[#00abf0] border-4 rounded-full p-2">
         <div className="overflow-hidden rounded-full">
           <Image
             alt="profile-picture"
-            src={"https://avatars.githubusercontent.com/u/137313178?v=4"}
+            src={"/foto.jpg"}
             width={250}
             height={250}
           />

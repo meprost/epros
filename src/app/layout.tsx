@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import Navbar from "./navbar";
+import Navbar from "../components/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,9 +58,10 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="font-main bg-[#4E31AA] bg-no-repeat min-h-[100vh]">
+      <body className="relative font-main bg-[#081021] bg-no-repeat min-h-[100vh]">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
