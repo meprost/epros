@@ -51,7 +51,7 @@ export default function Home() {
         <div className="overflow-hidden rounded-full">
           <Image
             alt="profile-picture"
-            src={"/foto.jpg"}
+            src={"/foto.JPG"}
             width={250}
             height={250}
           />
