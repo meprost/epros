@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Switch from "./switch";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -15,6 +16,7 @@ export default function Navbar() {
         </div>
       </Link>
       <div className="flex items-center gap-x-8">
+        <Switch />
         {(
           [
             ["/", "home"],

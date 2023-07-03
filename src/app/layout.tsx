@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Meprost",
   description: "Meprost personal site",
-  Head: Head
+  Head: Head,
 };
 
 export default function RootLayout({
@@ -60,7 +60,7 @@ export default function RootLayout({
       </head>
       <body className="relative font-main bg-[#081021] bg-no-repeat min-h-[100vh]">
         <Navbar />
-        {children}
+        <div className="pb-16">{children}</div>
         <Footer />
       </body>
     </html>
