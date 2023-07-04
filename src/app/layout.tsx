@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "@/components/footer";
+import ThemeProvider from "@/components/themeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <link
           rel="apple-touch-icon"
@@ -58,10 +59,12 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="relative font-main bg-[#081021] bg-no-repeat min-h-[100vh]">
-        <Navbar />
-        <div className="pb-16">{children}</div>
-        <Footer />
+      <body className="relative font-main bg-white dark:bg-[#0E111E] bg-no-repeat min-h-[100vh]">
+        <ThemeProvider>
+          <Navbar />
+          <div className="pb-16">{children}</div>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

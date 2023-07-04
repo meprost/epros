@@ -12,10 +12,10 @@ export default function Navbar() {
       {/* shadow-[0px_5px_15px_4px_rgba(0,0,0,0.25)] bg-[#3A1078]  */}
       <Link href="/">
         <div >
-          <Image className="filter drop-shadow-[0_0_10px_rgba(171,240,225,0.5)]" alt="logo" src="/logo.png" width={150} height={100} />
+          <Image alt="logo" src="/logo2.png" width={65} height={65} />
         </div>
       </Link>
-      <div className="flex items-center gap-x-8">
+      <div className="flex-wrap flex items-center gap-x-8">
         <Switch />
         {(
           [
@@ -30,8 +30,8 @@ export default function Navbar() {
             <p
               className={
                 pathname === to
-                  ? "text-[#00abf0] uppercase font-medium"
-                  : "text-white uppercase"
+                  ? "text-[#007aff] uppercase font-medium"
+                  : "text-gray-600 dark:text-white uppercase"
               }
             >
               {label}
