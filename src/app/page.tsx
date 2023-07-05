@@ -32,15 +32,23 @@ export default function Home() {
               [
                 "instagram",
                 "https://instagram.com/cherylrio_",
-                <InstagramLogo />,
+                <InstagramLogo key={"instagramlogo"} />,
               ],
-              ["twitter", "https://instagram.com/cherylrio_", <TwitterLogo />],
+              [
+                "twitter",
+                "https://instagram.com/cherylrio_",
+                <TwitterLogo key={"twitterlogo"} />,
+              ],
               [
                 "linkedin",
                 "https://instagram.com/cherylrio_",
-                <LinkedInLogo />,
+                <LinkedInLogo key={"linkedinlogo"} />,
               ],
-              ["gmail", "https://instagram.com/cherylrio_", <GmailLogo />],
+              [
+                "gmail",
+                "https://instagram.com/cherylrio_",
+                <GmailLogo key={"gmaillogo"} />,
+              ],
             ] as const
           ).map(([label, link, logo]) => {
             return (
