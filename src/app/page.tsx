@@ -1,3 +1,7 @@
+import GmailLogo from "@/components/logo/gmail";
+import InstagramLogo from "@/components/logo/instagram";
+import LinkedInLogo from "@/components/logo/linkedIn";
+import TwitterLogo from "@/components/logo/twitter";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,17 +32,21 @@ export default function Home() {
               [
                 "instagram",
                 "https://instagram.com/cherylrio_",
-                "/instagram.svg",
+                <InstagramLogo />,
               ],
-              ["twitter", "https://instagram.com/cherylrio_", "/twitter.svg"],
-              ["linkedin", "https://instagram.com/cherylrio_", "/linkedin.svg"],
-              ["gmail", "https://instagram.com/cherylrio_", "/mail.svg"],
+              ["twitter", "https://instagram.com/cherylrio_", <TwitterLogo />],
+              [
+                "linkedin",
+                "https://instagram.com/cherylrio_",
+                <LinkedInLogo />,
+              ],
+              ["gmail", "https://instagram.com/cherylrio_", <GmailLogo />],
             ] as const
           ).map(([label, link, logo]) => {
             return (
               <div key={label} className="text-white">
                 <Link href={link} target="_blank">
-                  <Image alt={label} src={logo} width={25} height={25} />
+                  {logo}
                 </Link>
               </div>
             );
