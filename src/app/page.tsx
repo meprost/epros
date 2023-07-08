@@ -1,23 +1,39 @@
+"use client";
 import GmailLogo from "@/components/logo/gmail";
 import InstagramLogo from "@/components/logo/instagram";
 import LinkedInLogo from "@/components/logo/linkedIn";
 import TwitterLogo from "@/components/logo/twitter";
 import Image from "next/image";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
+
+const NamaBergerak = () => {
+  return (
+    <TypeAnimation
+      sequence={["Cheryl Rio K. P.", 1000, "Web Developer", 1000]}
+      speed={1}
+      wrapper="h1"
+      cursor={true}
+      className="py-4 leading-[50px] md:leading-none text-3xl md:text-6xl font-semibold text-[#232222] dark:text-white tracking-wide"
+      repeat={Infinity}
+    />
+  );
+};
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-y-20 md:gap-y-0 md:flex-row justify-between items-center min-h-[75vh] py-20 md:py-0 px-16">
       {/* left content */}
       <div className="order-2 md:order-1">
-        <h2 className="text-3xl text-black dark:text-white font-medium tracking-widest">
+        <h2 className="text-xl text-black dark:text-white font-medium tracking-widest">
           Hi, <span className="text-[#007aff]">I&#39;am</span>
         </h2>
-        <h1 className="py-4 leading-[50px] md:leading-none text-4xl md:text-6xl font-semibold text-[#2C2C2C]  dark:text-white tracking-wide">
+        {/* <h1 className="py-4 leading-[50px] md:leading-none text-4xl md:text-6xl font-semibold text-[#232222]  dark:text-white tracking-wide">
           Cheryl Rio Kurnia Putra
-        </h1>
+        </h1> */}
+        <NamaBergerak />
         <p className="pt-2 text-black dark:text-white">
-          I&#39;am a student who learn IT from Indonesia.
+          Welcome to My personal website.
         </p>
         <br />
         <a href="/foto2.webp" download="coba">
