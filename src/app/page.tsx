@@ -14,7 +14,7 @@ const NamaBergerak = () => {
       speed={1}
       wrapper="h1"
       cursor={true}
-      className="py-4 leading-[50px] md:leading-none text-3xl md:text-6xl font-semibold text-[#232222] dark:text-white tracking-wide"
+      className="py-4 leading-[50px] md:leading-none text-3xl md:text-6xl font-semibold text-[#081021] dark:text-white tracking-wide"
       repeat={Infinity}
     />
   );
@@ -25,14 +25,14 @@ export default function Home() {
     <div className="flex flex-col gap-y-20 md:gap-y-0 md:flex-row justify-between items-center min-h-[75vh] py-20 md:py-0 px-16">
       {/* left content */}
       <div className="order-2 md:order-1">
-        <h2 className="text-xl text-black dark:text-white font-medium tracking-widest">
+        <h2 className="text-xl text-[#081021] dark:text-white font-medium tracking-widest">
           Hi, <span className="text-[#007aff]">I&#39;am</span>
         </h2>
         {/* <h1 className="py-4 leading-[50px] md:leading-none text-4xl md:text-6xl font-semibold text-[#232222]  dark:text-white tracking-wide">
           Cheryl Rio Kurnia Putra
         </h1> */}
         <NamaBergerak />
-        <p className="pt-2 text-black dark:text-white">
+        <p className="pt-2 text-[#081021] dark:text-white">
           Welcome to My personal website.
         </p>
         <br />
@@ -83,9 +83,9 @@ export default function Home() {
         <div className="overflow-hidden rounded-full">
           <Image
             alt="profile-picture"
-            src={"/foto.JPG"}
-            width={250}
-            height={250}
+            src={"/fotobgblue.webp"}
+            width={300}
+            height={300}
           />
         </div>
       </div>
